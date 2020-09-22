@@ -1,0 +1,1 @@
+select * from itmn232_atividade;
