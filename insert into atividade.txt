@@ -1,0 +1,13 @@
+INSERT INTO `myTable` (`id_atividade`,`nome_atividade`) VALUES (1,"Execução de Mudança Planejada");
+INSERT INTO `myTable` (`id_atividade`,`nome_atividade`) VALUES (2,"Acionamento por Mudança");
+INSERT INTO `myTable` (`id_atividade`,`nome_atividade`) VALUES (3,"Acionamento por Incidente");
+INSERT INTO `myTable` (`id_atividade`,`nome_atividade`) VALUES (4,"Acionamento Indevido");
+INSERT INTO `myTable` (`id_atividade`,`nome_atividade`) VALUES (5,"Cobertura de Turnos");
+INSERT INTO `myTable` (`id_atividade`,`nome_atividade`) VALUES (6,"Cancelamento de Rotina Batch");
+INSERT INTO `myTable` (`id_atividade`,`nome_atividade`) VALUES (7,"Teste de Continuidade");
+INSERT INTO `myTable` (`id_atividade`,`nome_atividade`) VALUES (8,"Sustentação e Operação (24x7)");
+INSERT INTO `myTable` (`id_atividade`,`nome_atividade`) VALUES (9,"Implantação de Projeto");
+INSERT INTO `myTable` (`id_atividade`,`nome_atividade`) VALUES (10,"War Room");
+INSERT INTO `myTable` (`id_atividade`,`nome_atividade`) VALUES (11,"TOP TI");
+INSERT INTO `myTable` (`id_atividade`,`nome_atividade`) VALUES (12,"Hora não compensada no mês");
+INSERT INTO `myTable` (`id_atividade`,`nome_atividade`) VALUES (13,"Outros");
