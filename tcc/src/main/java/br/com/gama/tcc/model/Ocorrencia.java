@@ -1,5 +1,90 @@
 package br.com.gama.tcc.model;
 
+import java.time.LocalDate;
+import java.time.LocalTime;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
+
+@Entity
+@Table(name = "itmn232_ocorrencia")
 public class Ocorrencia {
+    
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name="num_seq")
+    private int num_seq;
+
+    @Column(name = "descricao")
+    private String descricao;
+
+    @Column(name = "data_oc")
+    @JsonFormat(pattern = "dd/MM/yyyy")
+    private LocalDate data_oc;
+
+    @Column(name = "num_horas")
+    @JsonFormat(pattern = "HH:mm")
+    private LocalTime num_horas;
+
+    @Column(name = "ponto_manual")    
+    private int ponto_manual;
+
+    @Column(name = "status")
+    private int status;
+
+    public int getNum_seq() {
+        return num_seq;
+    }
+
+    public void setNum_seq(int num_seq) {
+        this.num_seq = num_seq;
+    }
+
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+
+    public LocalDate getData_oc() {
+        return data_oc;
+    }
+
+    public void setData_oc(LocalDate data_oc) {
+        this.data_oc = data_oc;
+    }
+
+    public LocalTime getNum_horas() {
+        return num_horas;
+    }
+
+    public void setNum_horas(LocalTime num_horas) {
+        this.num_horas = num_horas;
+    }
+
+    public int getPonto_manual() {
+        return ponto_manual;
+    }
+
+    public void setPonto_manual(int ponto_manual) {
+        this.ponto_manual = ponto_manual;
+    }
+
+    public int getStatus() {
+        return status;
+    }
+
+    public void setStatus(int status) {
+        this.status = status;
+    }
+
     
 }

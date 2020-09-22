@@ -8,32 +8,90 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "itmn232_atividade")
+@Table(name = "itmn232_usuario")
 public class Usuario {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id_atividade")
-    private int id_atividade;
+    @Column(name = "id_usuario")
+    private int id_usuario;
 
-    @Column(name = "nome_atividade", length = 100, nullable = false)
-    private String nome_atividade;
+    @Column(name = "nome_usuario", length = 100, nullable = false)
+    private String nome_usuario;
 
-    public int getId_atividade() {
-        return id_atividade;
+    @Column(name = "email_usuario", length = 100, nullable = false)
+    private String email_usuario;
+
+    @Column(name = "racf", length = 7, nullable = false)
+    private String racf;
+
+    @Column(name = "senha", length = 50, nullable = false)
+    private String senha;
+
+    @Column(name = "link_foto", length = 255, nullable = false)
+    private String link_foto;
+
+    @Column(name = "gestor", nullable = false)
+    private int gestor;
+
+    public Usuario(){
+        
     }
 
-    public void setId_atividade(int id_atividade) {
-        this.id_atividade = id_atividade;
+    public int getId_usuario() {
+        return id_usuario;
     }
 
-    public String getNome_atividade() {
-        return nome_atividade;
+    public void setId_usuario(int id_usuario) {
+        this.id_usuario = id_usuario;
     }
 
-    public void setNome_atividade(String nome_atividade) {
-        this.nome_atividade = nome_atividade;
+    public String getNome_usuario() {
+        return nome_usuario;
     }
 
-    
+    public void setNome_usuario(String nome_usuario) {
+        this.nome_usuario = nome_usuario;
+    }
+
+    public String getEmail_usuario() {
+        return email_usuario;
+    }
+
+    public void setEmail_usuario(String email_usuario) {
+        this.email_usuario = email_usuario;
+    }
+
+    public String getRacf() {
+        return racf;
+    }
+
+    public void setRacf(String racf) {
+        this.racf = racf;
+    }
+
+    public String getSenha() {
+        return senha;
+    }
+
+    public void setSenha(String senha) {
+        this.senha = senha;
+    }
+
+    public String getLink_foto() {
+        return link_foto;
+    }
+
+    public void setLink_foto(String link_foto) {
+        this.link_foto = link_foto;
+    }
+
+    public int getGestor() {
+        return gestor;
+    }
+
+    public void setGestor(int gestor) {
+        this.gestor = gestor;
+    }
+
 }
