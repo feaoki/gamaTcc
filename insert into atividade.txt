@@ -1,0 +1,14 @@
+use gamadb;
+INSERT INTO `itmn232_atividade` (`id_atividade`,`nome_atividade`) VALUES (1,"Execução de Mudança Planejada");
+INSERT INTO `itmn232_atividade` (`id_atividade`,`nome_atividade`) VALUES (2,"Acionamento por Mudança");
+INSERT INTO `itmn232_atividade` (`id_atividade`,`nome_atividade`) VALUES (3,"Acionamento por Incidente");
+INSERT INTO `itmn232_atividade` (`id_atividade`,`nome_atividade`) VALUES (4,"Acionamento Indevido");
+INSERT INTO `itmn232_atividade` (`id_atividade`,`nome_atividade`) VALUES (5,"Cobertura de Turnos");
+INSERT INTO `itmn232_atividade` (`id_atividade`,`nome_atividade`) VALUES (6,"Cancelamento de Rotina Batch");
+INSERT INTO `itmn232_atividade` (`id_atividade`,`nome_atividade`) VALUES (7,"Teste de Continuidade");
+INSERT INTO `itmn232_atividade` (`id_atividade`,`nome_atividade`) VALUES (8,"Sustentação e Operação (24x7)");
+INSERT INTO `itmn232_atividade` (`id_atividade`,`nome_atividade`) VALUES (9,"Implantação de Projeto");
+INSERT INTO `itmn232_atividade` (`id_atividade`,`nome_atividade`) VALUES (10,"War Room");
+INSERT INTO `itmn232_atividade` (`id_atividade`,`nome_atividade`) VALUES (11,"TOP TI");
+INSERT INTO `itmn232_atividade` (`id_atividade`,`nome_atividade`) VALUES (12,"Hora não compensada no mês");
+INSERT INTO `itmn232_atividade` (`id_atividade`,`nome_atividade`) VALUES (13,"Outros");
