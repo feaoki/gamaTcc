@@ -1,3 +1,4 @@
+drop database gamadb; 
 
 create database gamadb;
 
@@ -10,7 +11,7 @@ CREATE TABLE gamadb.itmn232_usuario (
     racf VARCHAR(7),
     senha VARCHAR(50),
     link_foto VARCHAR(255),
-    gestor BIT NOT NULL,
+    gestor INT(1) NOT NULL,
     PRIMARY KEY (id_usuario)
 );
 
