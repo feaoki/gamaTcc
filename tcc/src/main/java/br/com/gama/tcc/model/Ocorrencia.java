@@ -8,9 +8,12 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity
 @Table(name = "itmn232_ocorrencia")
@@ -37,6 +40,16 @@ public class Ocorrencia {
 
     @Column(name = "status")
     private int status;
+
+    @ManyToOne
+    @JoinColumn(name = "id_atividade")
+    @JsonIgnoreProperties("atividades")
+    private Atividade atividade;
+
+    @ManyToOne
+    @JoinColumn(name = "id_usuario")
+    @JsonIgnoreProperties("ocorrencias")
+    private Usuario usuario;
 
     public int getNum_seq() {
         return num_seq;

@@ -16,6 +16,10 @@ public class Atividade {
     @Column(name = "nome_atividade")
     private String nome_atividade;
 
+    /*@OneToMany(mappedBy = "itmn232_atividade")
+    @JsonIgnoreProperties("itmn232_atividade")
+    private List<Ocorrencia> ocorrencias;*/
+
     public int getId_atividade() {
         return id_atividade;
     }

@@ -7,19 +7,18 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.gama.tcc.dao.AtividadeDAO;
-import br.com.gama.tcc.model.Atividade;
+import br.com.gama.tcc.dao.OcorrenciaDAO;
+import br.com.gama.tcc.model.Ocorrencia;
 
 @RestController
 @CrossOrigin("*")
-public class AtividadeController {
+public class OcorrenciaController {
     
     @Autowired
-    private AtividadeDAO dao;
+    private OcorrenciaDAO dao;
 
-    @GetMapping("/atividades")
-    public List<Atividade> getMethodName(){
-        return (List<Atividade>) dao.findAll();
-    }    
-
+    @GetMapping("/ocorrencias")
+    public List<Ocorrencia> getMethodName(){
+        return (List<Ocorrencia>) dao.findAll();
+    }       
 }

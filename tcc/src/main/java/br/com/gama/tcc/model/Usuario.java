@@ -1,11 +1,16 @@
 package br.com.gama.tcc.model;
 
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity
 @Table(name = "itmn232_usuario")
@@ -33,6 +38,11 @@ public class Usuario {
 
     @Column(name = "gestor", nullable = false)
     private int gestor;
+
+
+    @OneToMany(mappedBy = "usuario")
+    @JsonIgnoreProperties("usuario")
+    private List<Ocorrencia> ocorrencias;
 
     public Usuario(){
         
