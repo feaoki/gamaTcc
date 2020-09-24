@@ -28,14 +28,12 @@ public class Ocorrencia {
     private String descricao;
 
     @Column(name = "data_oc")
-    @JsonFormat(pattern = "dd/mm/YYYY HH:mm")
+    @JsonFormat(pattern = "dd/MM/yyyy")
     private LocalDate data_oc;
-    //private LocalDate data_oc = LocalDate.now();
 
     @Column(name = "num_horas")
     @JsonFormat(pattern = "HH:mm")
     private LocalTime num_horas;
-    //private LocalTime num_horas = LocalTime.now();
 
     @Column(name = "ponto_manual")    
     private int ponto_manual;

@@ -1,0 +1,182 @@
+body {
+    background-color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+}
+
+p {
+    color: black;
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.menu {
+    color: blue;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.titulo {
+    color: #FF4500;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.cor_do_fundo {
+    background-color: cyan;
+}
+
+#area #formulario {
+    color: green;
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    position: absolute;
+    display: block;
+}
+
+#area {
+    position: relative;
+    left: 30%;
+    width: 320px;
+    height: 300px;
+}
+
+legend {
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#formulario input.campo_nome {
+    background-color: whitesmoke;
+    position: absolute;
+    left: 65px;
+    top: 18px;
+    width: 200px;
+}
+
+.label1 {
+    position: absolute;
+    left: 19px;
+    margin-right: 5px;
+    top: 21px;
+    font-style: normal;
+}
+
+#formulario input.campo_email {
+    background-color: whitesmoke;
+    position: absolute;
+    left: 65px;
+    top: 42px;
+    width: 240px;
+}
+
+.label2 {
+    position: absolute;
+    left: 19px;
+    margin-right: 5px;
+    top: 45px;
+    font-style: normal;
+}
+
+#formulario input.campo_senha {
+    background-color: darkorange;
+    position: absolute;
+    left: 65px;
+    top: 65px;
+    width: 30px;
+}
+
+.label3 {
+    position: absolute;
+    left: 19px;
+    margin-right: 5px;
+    top: 68px;
+    font-style: normal;
+}
+
+.container {
+    border: 3px solid gray;
+    min-height: 500px;
+}
+
+.div1 img {
+    border: 2px solid black;
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-right: 5px;
+}
+
+.div2 {
+    margin-top: 30px;
+    margin-left: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+}
+
+.div3 {
+    margin-top: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+}
+
+.div4 {
+    margin-top: 30px;
+    margin-left: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+}
+
+.div5 {
+    margin-top: 30px;
+    margin-left: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+}
+
+.div6 {
+    margin-top: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+}
+
+.div7 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+}
+
+.div10 {
+    color: #FF4500;
+    font-size: 28px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-style: normal;
+}
+
+.div11 {
+    margin-top: 30px;
+    margin-left: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+}
+
+.botaoaplicar {
+    width: 50px;
+}
+
+table {
+    border: 1px;
+    margin-top: 20px;
+    border: 1px solid black;
+    padding: 10px;
+    width: 100%;
+}
+
+table,
+td,
+tr {
+    border: 1px solid black;
+    text-align: center;
+}
