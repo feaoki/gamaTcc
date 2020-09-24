@@ -1,0 +1,20 @@
+INSERT INTO `itmn232_ocorrencia` (`id_usuario`,`id_atividade`,`descricao`,`data_oc`,`num_horas`,`ponto_manual`,`status`) VALUES (2,13,"descricao ocorrencia","2020-09-10 10:45:34",7,0,"0");
+INSERT INTO `itmn232_ocorrencia` (`id_usuario`,`id_atividade`,`descricao`,`data_oc`,`num_horas`,`ponto_manual`,`status`) VALUES (3,13,"descricao ocorrencia","2020-09-02 08:35:00",8,0,"0");
+INSERT INTO `itmn232_ocorrencia` (`id_usuario`,`id_atividade`,`descricao`,`data_oc`,`num_horas`,`ponto_manual`,`status`) VALUES (2,13,"descricao ocorrencia","2020-09-09 00:10:00",5,0,"0");
+INSERT INTO `itmn232_ocorrencia` (`id_usuario`,`id_atividade`,`descricao`,`data_oc`,`num_horas`,`ponto_manual`,`status`) VALUES (3,13,"descricao ocorrencia","2020-09-13 02:05:00",4,0,"0");
+INSERT INTO `itmn232_ocorrencia` (`id_usuario`,`id_atividade`,`descricao`,`data_oc`,`num_horas`,`ponto_manual`,`status`) VALUES (3,13,"descricao ocorrencia","2020-09-16 03:18:37",1,0,"0");
+INSERT INTO `itmn232_ocorrencia` (`id_usuario`,`id_atividade`,`descricao`,`data_oc`,`num_horas`,`ponto_manual`,`status`) VALUES (4,13,"descricao ocorrencia","2020-08-31 01:00:00",9,0,"0");
+INSERT INTO `itmn232_ocorrencia` (`id_usuario`,`id_atividade`,`descricao`,`data_oc`,`num_horas`,`ponto_manual`,`status`) VALUES (4,13,"descricao ocorrencia","2020-09-01 04:00:00",6,0,"0");
+INSERT INTO `itmn232_ocorrencia` (`id_usuario`,`id_atividade`,`descricao`,`data_oc`,`num_horas`,`ponto_manual`,`status`) VALUES (4,13,"descricao ocorrencia","2020-08-26 05:00:00",8,0,"0");
+INSERT INTO `itmn232_ocorrencia` (`id_usuario`,`id_atividade`,`descricao`,`data_oc`,`num_horas`,`ponto_manual`,`status`) VALUES (8,13,"descricao ocorrencia","2020-08-30 06:00:00",2,0,"0");
+INSERT INTO `itmn232_ocorrencia` (`id_usuario`,`id_atividade`,`descricao`,`data_oc`,`num_horas`,`ponto_manual`,`status`) VALUES (4,13,"descricao ocorrencia","2020-08-27 07:00:00",9,0,"0");
+INSERT INTO `itmn232_ocorrencia` (`id_usuario`,`id_atividade`,`descricao`,`data_oc`,`num_horas`,`ponto_manual`,`status`) VALUES (9,13,"descricao ocorrencia","2020-08-22 08:00:00",4,0,"0");
+INSERT INTO `itmn232_ocorrencia` (`id_usuario`,`id_atividade`,`descricao`,`data_oc`,`num_horas`,`ponto_manual`,`status`) VALUES (11,13,"descricao ocorrencia","2020-08-16 11:45:00",5,0,"0");
+INSERT INTO `itmn232_ocorrencia` (`id_usuario`,`id_atividade`,`descricao`,`data_oc`,`num_horas`,`ponto_manual`,`status`) VALUES (12,13,"descricao ocorrencia","2020-08-15 10:00:00",5,0,"0");
+INSERT INTO `itmn232_ocorrencia` (`id_usuario`,`id_atividade`,`descricao`,`data_oc`,`num_horas`,`ponto_manual`,`status`) VALUES (12,13,"descricao ocorrencia","2020-09-07 07:20:00",5,0,"0");
+INSERT INTO `itmn232_ocorrencia` (`id_usuario`,`id_atividade`,`descricao`,`data_oc`,`num_horas`,`ponto_manual`,`status`) VALUES (13,13,"descricao ocorrencia","2020-09-12 00:00:00",9,0,"0");
+INSERT INTO `itmn232_ocorrencia` (`id_usuario`,`id_atividade`,`descricao`,`data_oc`,`num_horas`,`ponto_manual`,`status`) VALUES (14,13,"descricao ocorrencia","2020-09-17 06:56:00",6,0,"0");
+INSERT INTO `itmn232_ocorrencia` (`id_usuario`,`id_atividade`,`descricao`,`data_oc`,`num_horas`,`ponto_manual`,`status`) VALUES (13,13,"descricao ocorrencia","2020-09-17 08:00:00",10,0,"0");
+INSERT INTO `itmn232_ocorrencia` (`id_usuario`,`id_atividade`,`descricao`,`data_oc`,`num_horas`,`ponto_manual`,`status`) VALUES (13,13,"descricao ocorrencia","2020-08-31 01:00:00",1,0,"0");
+INSERT INTO `itmn232_ocorrencia` (`id_usuario`,`id_atividade`,`descricao`,`data_oc`,`num_horas`,`ponto_manual`,`status`) VALUES (14,13,"descricao ocorrencia","2020-08-19 02:33:00",2,0,"0");
+INSERT INTO `itmn232_ocorrencia` (`id_usuario`,`id_atividade`,`descricao`,`data_oc`,`num_horas`,`ponto_manual`,`status`) VALUES (8,13,"descricao ocorrencia","2020-09-14 00:07:00",2,0,"0");INSERT INTO `itmn232_ocorrencia` (`id_usuario`,`id_atividade`,`descricao`,`data_oc`,`num_horas`,`ponto_manual`,`status`) VALUES (2,"13","descricao ocorrencia","2020-09-10 10:45:34",7,0,"0")
