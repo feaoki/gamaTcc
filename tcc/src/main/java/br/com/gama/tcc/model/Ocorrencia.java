@@ -28,12 +28,14 @@ public class Ocorrencia {
     private String descricao;
 
     @Column(name = "data_oc")
-    @JsonFormat(pattern = "dd/MM/yyyy")
+    @JsonFormat(pattern = "dd/mm/YYYY HH:mm")
     private LocalDate data_oc;
+    //private LocalDate data_oc = LocalDate.now();
 
     @Column(name = "num_horas")
     @JsonFormat(pattern = "HH:mm")
     private LocalTime num_horas;
+    //private LocalTime num_horas = LocalTime.now();
 
     @Column(name = "ponto_manual")    
     private int ponto_manual;
@@ -43,7 +45,7 @@ public class Ocorrencia {
 
     @ManyToOne
     @JoinColumn(name = "id_atividade")
-    @JsonIgnoreProperties("atividades")
+    @JsonIgnoreProperties("ocorrencias")
     private Atividade atividade;
 
     @ManyToOne
@@ -98,6 +100,22 @@ public class Ocorrencia {
     public void setStatus(int status) {
         this.status = status;
     }
+
+	public Atividade getAtividade() {
+		return atividade;
+	}
+
+	public void setAtividade(Atividade atividade) {
+		this.atividade = atividade;
+	}
+
+	public Usuario getUsuario() {
+		return usuario;
+	}
+
+	public void setUsuario(Usuario usuario) {
+		this.usuario = usuario;
+	}
 
     
 }

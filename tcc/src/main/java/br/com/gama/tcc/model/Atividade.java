@@ -1,9 +1,14 @@
 package br.com.gama.tcc.model;
 
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity
 @Table(name = "itmn232_atividade")
@@ -16,9 +21,9 @@ public class Atividade {
     @Column(name = "nome_atividade")
     private String nome_atividade;
 
-    /*@OneToMany(mappedBy = "itmn232_atividade")
-    @JsonIgnoreProperties("itmn232_atividade")
-    private List<Ocorrencia> ocorrencias;*/
+    @OneToMany(mappedBy = "atividade")
+    @JsonIgnoreProperties("atividade")
+    private List<Ocorrencia> ocorrencias;
 
     public int getId_atividade() {
         return id_atividade;
@@ -34,6 +39,14 @@ public class Atividade {
 
     public void setNome_atividade(String nome_atividade) {
         this.nome_atividade = nome_atividade;
+    }
+
+    public List<Ocorrencia> getOcorrencias() {
+        return ocorrencias;
+    }
+
+    public void setOcorrencias(List<Ocorrencia> ocorrencias) {
+        this.ocorrencias = ocorrencias;
     }
 
 

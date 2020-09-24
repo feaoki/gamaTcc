@@ -17,6 +17,7 @@ public class UsuarioController {
     @Autowired
     private UsuarioDAO dao;
     
+    //endpoint 1 backend
     @PostMapping("/login")
     public ResponseEntity<Usuario> fazerLogin(@RequestBody Usuario user){
         Usuario userEncontrado = dao.findByRacfAndSenha(user.getRacf(), user.getSenha());

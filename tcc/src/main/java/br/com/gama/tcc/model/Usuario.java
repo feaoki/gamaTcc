@@ -19,7 +19,7 @@ public class Usuario {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_usuario")
-    private int id_usuario;
+    private int usuario;
 
     @Column(name = "nome_usuario", length = 100, nullable = false)
     private String nome_usuario;
@@ -40,7 +40,7 @@ public class Usuario {
     private int gestor;
 
 
-    @OneToMany(mappedBy = "usuario")
+    @OneToMany(mappedBy = "usuario") // nome do campo que na classe ocorrencia mapeia essa relação, ou seja, tem que existir na ocorrencia
     @JsonIgnoreProperties("usuario")
     private List<Ocorrencia> ocorrencias;
 
@@ -48,13 +48,7 @@ public class Usuario {
         
     }
 
-    public int getId_usuario() {
-        return id_usuario;
-    }
 
-    public void setId_usuario(int id_usuario) {
-        this.id_usuario = id_usuario;
-    }
 
     public String getNome_usuario() {
         return nome_usuario;
@@ -102,6 +96,22 @@ public class Usuario {
 
     public void setGestor(int gestor) {
         this.gestor = gestor;
+    }
+
+    public List<Ocorrencia> getOcorrencias() {
+        return ocorrencias;
+    }
+
+    public void setOcorrencias(List<Ocorrencia> ocorrencias) {
+        this.ocorrencias = ocorrencias;
+    }
+
+    public int getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(int usuario) {
+        this.usuario = usuario;
     }
 
 }

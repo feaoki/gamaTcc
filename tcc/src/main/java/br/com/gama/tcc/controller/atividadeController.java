@@ -17,6 +17,7 @@ public class AtividadeController {
     @Autowired
     private AtividadeDAO dao;
 
+    // endpoint 4 backend
     @GetMapping("/atividades")
     public List<Atividade> getMethodName(){
         return (List<Atividade>) dao.findAll();
