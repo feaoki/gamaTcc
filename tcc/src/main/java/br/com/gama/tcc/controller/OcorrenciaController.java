@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import br.com.gama.tcc.dao.OcorrenciaDAO;
 import br.com.gama.tcc.model.Ocorrencia;
+import br.com.gama.tcc.model.Usuario;
 
 @RestController
 @CrossOrigin("*")
@@ -35,6 +36,21 @@ public class OcorrenciaController {
         return ResponseEntity.ok(novostatus);
     } 
 
+    @GetMapping("/ocorrencias/colaborador/{id_usuario}")
+    public List<Ocorrencia> buscarColaborador(@PathVariable int id_usuario) {
+        Usuario usuario = new Usuario(id_usuario);
+        List<Ocorrencia> ocorrencias = dao.findByUsuario(usuario);
+        return ocorrencias;
+    }
+
+    /*@GetMapping("/ocorrencia/colaborador/{id_usuario}")
+    public ResponseEntity<List<Ocorrencia>> buscarOcorrenciaPorColaborador(@PathVariable int id_usuario) {
+        List<Ocorrencia> ocorrencias = dao.buscarOcorrenciaPorColaborador(id_usuario);
+        return ResponseEntity.ok(ocorrencias);
+    }*/
+
+
+
 
     // endoppint 5  backend
     @GetMapping("/ocorrencias/busca/{num_seq}")
@@ -42,6 +58,8 @@ public class OcorrenciaController {
         Ocorrencia busca = dao.buscarOcorrenciaPorId(num_seq);
         return ResponseEntity.ok(busca);
     } 
+
+
 
 
     // endpoint 6 backend

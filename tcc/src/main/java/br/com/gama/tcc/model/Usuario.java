@@ -48,6 +48,9 @@ public class Usuario {
         
     }
 
+    public Usuario(int usuario){
+        this.usuario = usuario;
+    }
 
 
     public String getNome_usuario() {
